@@ -1,7 +1,7 @@
 import psi4
 import sys
 import os
-sys.path.append(os.path.abspath("/home/stephen/calc/tim_files/Perturb-EGKS/new-02-07-2021"))
+sys.path.append(os.path.abspath("./pEDFT"))
 from LibPerturb import *
 from operator import itemgetter
 import numpy as np
@@ -156,7 +156,7 @@ def genData(func, basis):
 
     return excitations
 
-genData('blyp', 'def2-svp')    
+genData('hf', 'def2-svp')    
     
 
 
